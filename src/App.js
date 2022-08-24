@@ -1,20 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+import ItemListContainer from './components/ItemListConteiner/ItemListConteiner';
+
 
 const App = () => {
+  const saludo = '¡Bienvenidos a Rosario Chocolates!'
+
   return (
     <>
       <Navbar />
-      <main>
-        <section>
-          <h2>
-            Bienvenidos!
-          </h2>
-        </section>
-      </main>
-      <footer>
-        <h5>Todos los derechos de esta pagina estan hechos por Felipe Iñigo Quiroga</h5>
-      </footer>
+      <ItemListContainer saludo={saludo}/>
+      <Main />
+      <Footer />
     </>
   );
 };

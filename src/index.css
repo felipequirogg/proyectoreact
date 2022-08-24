@@ -1,36 +1,64 @@
 body {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Anek Telugu', sans-serif;
+  background-color: #473a3b;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.productos{
+  color: white;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
 }
-
 .navbar{
   display: flex;
-  padding: 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: #313131;
+  background-color: white;
+  margin-bottom: 1px white solid ;
+  border-radius: 30px;
+  margin: 10px;
 }
 .titulo{
-  color: white;
+  color: #473a3b;
+  margin-left: 20px;
 }
 .navbar ul{
   display: flex;
   list-style-type: none;
   gap: 25px;
-}
-.navbar ul li{
+  margin-right: 20px;
+  align-items: center;
 }
 .navbar ul li a{
   text-decoration: none;
-  color: white;
+  color: #473a3b;
   font-size: 20px;
+}
+.textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.titulo__principal{
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+.titulo__secundario{
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+}
+.parrafo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0%;
+}
+.footer{
+  color: white;
+  text-align: end;
 }
