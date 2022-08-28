@@ -1,11 +1,12 @@
 import CardWidget from '../CardWidget/CardWidget';
 import HiShoppingCart from '../CardWidget/CardWidget'
+import logorosario from '../img/iconorosario.png';
 
 const Navbar = () => {
     return (
         <header>
             <nav className="navbar">
-                <h1 className="titulo">Rosario chocolates</h1>
+                <img src={logorosario} className="logoimagen" alt="Logo Chocolates Rosario" />
                 <ul>
                     <li>
                         <a href="https://plataforma.coderhouse.com/cursos/37080/reactjs">Inicio</a>
