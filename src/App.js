@@ -11,8 +11,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <ItemListContainer saludo={saludo}/>
       <Main />
+      <ItemListContainer saludo={saludo}/>
       <Footer />
     </>
   );

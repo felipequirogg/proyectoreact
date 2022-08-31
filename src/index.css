@@ -90,3 +90,11 @@ body {
   background-color: white;
   color: #473a3b;
 }
+.chocolate{
+  text-decoration: none;
+  color: white;
+}
+.chocolateimg{
+  width: 200px;
+  border-radius: 20px;
+}
