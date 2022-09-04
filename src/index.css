@@ -90,9 +90,17 @@ body {
   background-color: white;
   color: #473a3b;
 }
+.conjunto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
 .chocolate{
   text-decoration: none;
   color: white;
+  font-size: 15px;
 }
 .chocolateimg{
   width: 200px;
