@@ -1,6 +1,7 @@
 import CardWidget from '../CardWidget/CardWidget';
 import HiShoppingCart from '../CardWidget/CardWidget'
 import logorosario from '../img/iconorosario.png';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,7 +13,7 @@ const Navbar = () => {
                         <a href="https://plataforma.coderhouse.com/cursos/37080/reactjs">Inicio</a>
                     </li>
                     <li>
-                        <a href="https://plataforma.coderhouse.com/cursos/37080/reactjs">Productos</a>
+                        <NavLink to='/category/categoryId'>Productos</NavLink>
                     </li>
                     <li>
                         <a href="https://plataforma.coderhouse.com/cursos/37080/reactjs">Contacto</a>

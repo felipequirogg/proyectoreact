@@ -106,3 +106,12 @@ body {
   width: 200px;
   border-radius: 20px;
 }
+.listarow{
+  width: 100%;
+}
+.listarow1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
