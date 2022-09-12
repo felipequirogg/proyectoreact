@@ -10,13 +10,16 @@ const Navbar = () => {
                 <img src={logorosario} className="logoimagen" alt="Logo Chocolates Rosario" />
                 <ul>
                     <li>
-                        <a href="https://plataforma.coderhouse.com/cursos/37080/reactjs">Inicio</a>
+                        <NavLink to='/'>Inicio</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/category/categoryId'>Productos</NavLink>
+                        <NavLink to='/category/chocolatesartesanales'>Chocolates artesanales</NavLink>
                     </li>
                     <li>
-                        <a href="https://plataforma.coderhouse.com/cursos/37080/reactjs">Contacto</a>
+                        <NavLink to='/category/chocolatesprefabricados'>Chocolates prefabricados</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/'>Contacto</NavLink>
                     </li>
                     <HiShoppingCart size={30} color="#473a3b" />
                 </ul>

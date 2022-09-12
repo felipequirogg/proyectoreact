@@ -11,20 +11,16 @@ const App = () => {
   const saludo = '¡Bienvenidos a Rosario Chocolates!'
 
   return (
-    <>
     <BrowserRouter>
       <Navbar />
       <Main />
       <Routes>
-        <Route path='/' element={<ItemDetailContainer />} />
-        <Route path='/category/:categoryId' element={<ItemListContainer />} />
-        <Route path='/item/:id' element={<ItemDetailContainer />} />
+        <Route path='/' element={<ItemListContainer saludo={saludo} />} />
+        <Route path='/category/:categoriaId' element={<ItemListContainer />} />
+        <Route path='/item/:detalleId' element={<ItemDetailContainer />} />
       </Routes>
-      <ItemListContainer saludo={saludo}/>
-      <ItemDetailContainer />
       <Footer />
       </BrowserRouter>
-    </>
   );
 }
 
