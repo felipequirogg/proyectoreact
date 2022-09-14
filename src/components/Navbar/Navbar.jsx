@@ -21,7 +21,7 @@ const Navbar = () => {
                     <li>
                         <NavLink to='/'>Contacto</NavLink>
                     </li>
-                    <HiShoppingCart size={30} color="#473a3b" />
+                    <CardWidget/>
                 </ul>
             </nav>
             

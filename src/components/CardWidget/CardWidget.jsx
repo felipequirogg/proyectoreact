@@ -1,3 +1,14 @@
 import {HiShoppingCart} from 'react-icons/hi'
+import React from 'react';
 
-export default HiShoppingCart ;
+
+
+export const CartWidget = () => {
+    return (
+        <>
+        <HiShoppingCart></HiShoppingCart>
+        </>
+    )
+}
+
+export default CartWidget ;

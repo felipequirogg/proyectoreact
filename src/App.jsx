@@ -5,13 +5,16 @@ import Footer from './components/Footer/Footer';
 import ItemListContainer from './components/ItemListConteiner/ItemListConteiner';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import CartProvider from './Context/CartContext'
 
 
-const App = () => {
+function App () {
   const saludo = '¡Bienvenidos a Rosario Chocolates!'
 
   return (
     <BrowserRouter>
+      <CartProvider>
       <Navbar />
       <Main />
       <Routes>
@@ -19,6 +22,7 @@ const App = () => {
         <Route path='/category/:categoriaId' element={<ItemListContainer />} />
         <Route path='/item/:detalleId' element={<ItemDetailContainer />} />
       </Routes>
+      </CartProvider>
       <Footer />
       </BrowserRouter>
   );
