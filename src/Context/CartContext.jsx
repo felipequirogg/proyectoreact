@@ -1,4 +1,5 @@
 import React, {useState, useContext} from "react";
+import { act } from "react-dom/test-utils";
 const CartContext = React.createContext([]);
 
 export const useCartContext =  () => useContext(CartContext);
@@ -12,6 +13,12 @@ const CartProvider = ({ children }) => {
         setCart(newCart);
     }
 
+    const totalPrice = () => {
+        return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
+    }
+
+    const totalProducts = () => cart.reduce((acumulador, productoActual)=> acumulador + productoActual.quantity, 0);
+
     const clearCart = () => setCart ([]);
     const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
     const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
@@ -21,7 +28,10 @@ const CartProvider = ({ children }) => {
             clearCart,
             isInCart,
             removeProduct,
-            addProduct
+            addProduct,
+            totalPrice,
+            totalProducts,
+            cart
         }}>
             {children}
         </CartContext.Provider>

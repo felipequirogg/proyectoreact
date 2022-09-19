@@ -21,7 +21,9 @@ const Navbar = () => {
                     <li>
                         <NavLink to='/'>Contacto</NavLink>
                     </li>
+                    <NavLink className="nav__link" to='cart'>
                     <CardWidget/>
+                    </NavLink>
                 </ul>
             </nav>
             

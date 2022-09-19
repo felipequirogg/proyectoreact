@@ -7,7 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import CartProvider from './Context/CartContext'
-
+import Cart from './components/Cart/Cart';
 
 function App () {
   const saludo = '¡Bienvenidos a Rosario Chocolates!'
@@ -21,6 +21,7 @@ function App () {
         <Route path='/' element={<ItemListContainer saludo={saludo} />} />
         <Route path='/category/:categoriaId' element={<ItemListContainer />} />
         <Route path='/item/:detalleId' element={<ItemDetailContainer />} />
+        <Route path='/cart' element={<Cart/>} />
       </Routes>
       </CartProvider>
       <Footer />
