@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
+
 
 export const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] =  useState(initial);
@@ -11,6 +13,7 @@ export const ItemCount = ({initial, stock, onAdd}) => {
         setCount(count + 1);
     }
 
+    
     return( 
         <div className="counter">
             <div>
@@ -18,9 +21,12 @@ export const ItemCount = ({initial, stock, onAdd}) => {
             <span className="coun">{count}</span>
             <button disabled={count >= 10} onClick={increase} className="botones">+</button>
             </div>
-                <button disabled={stock <= 0} onClick={() => onAdd} className="agregar">Agregar al carrito</button>
+                <button id="miboton" disabled={stock <= 0} onClick={() => onAdd} className="agregar">Agregar al carrito</button>
             </div>
     )
 }
+
+
+
 
 export default ItemCount;
